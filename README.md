@@ -11,7 +11,7 @@
 </head>
 <body>
     <br>
-    <h1 style="background-color: #DAEAF1; color: black;"> Application to check the vote eligibility from age &#176;ADULT / YOUTH&#176; </h1>
+    <h1 style="background-color: #DAEAF1; color: black;"> Application to check the vote eligibility from age &#176;ADULT/STATUS/AGE/GENDER / YOUTH&#176; </h1>
     <br>
     <div class="container">
         <form id="agetemt" onsubmit = "calculateTemp(); return false">
@@ -19,8 +19,13 @@
             <br>
             <input type="number" name="age" id="age" value="0">
             <select name="temp_diff" id="temp_diff">
-                <option value="cel" id="option">&#176;ADULT</option>
-                <option value="fah" id="option">&#176;YOUTH</option>
+                <option value="ADULT" id="option">&#176;ADULT</option>
+                <option value="STATUS" id="option">&#176;STATUS</option>
+                <option value="AGE" id="option">&#176;AGE</option>
+                <option value="GENDER" id="option">&#176;GENDER</option>
+                <option value="YOUTH" id="option">&#176;YOUTH</option>
+                
+                
             </select>
             <br>
             <input type="submit" name="age" id="submit">
